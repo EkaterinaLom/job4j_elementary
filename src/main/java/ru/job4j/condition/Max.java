@@ -6,22 +6,22 @@ public class Max {
         return result;
     }
 
-    public int threeMax(int left, int right, int third) {
+    public int max(int left, int right, int third) {
         return max(left, max(right, third));
     }
 
-    public int fourMax(int left, int right, int third, int fourth) {
-        return threeMax(left, right, threeMax(right, third, fourth));
+    public int max(int left, int right, int third, int fourth) {
+        return max(left, right, max(right, third, fourth));
     }
 
     public static void main(String[] args) {
         int res = Max.max(3, 2);
         System.out.println(res);
         Max three = new Max();
-        int threeMax = three.threeMax(3, 8, 12);
-        System.out.println(threeMax);
+        int maxThree = three.max(3, 8, 12);
+        System.out.println(maxThree);
         Max four = new Max();
-        int fourMax = four.fourMax(2, 7, 5, 8);
+        int fourMax = four.max(2, 7, 5, 8);
         System.out.println(fourMax);
     }
 }
