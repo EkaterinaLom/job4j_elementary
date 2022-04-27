@@ -11,7 +11,7 @@ public class Max {
     }
 
     public int max(int left, int right, int third, int fourth) {
-        return max(left, right, max(right, third, fourth));
+        return max(max(left, right), max(third, fourth));
     }
 
     public static void main(String[] args) {
