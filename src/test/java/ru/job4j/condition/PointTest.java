@@ -13,4 +13,13 @@ public class PointTest {
         double expected = 2;
         Assert.assertEquals(expected, 2.0, 0.0);
     }
+
+    @Test
+    public void when24to00to46then4() {
+        Point a = new Point(2, 0, 4);
+        Point b = new Point(4, 0, 6);
+        double dist = a.distance3d(b);
+        double expected = 4;
+        Assert.assertEquals(expected, 4.0, 0.0);
+    }
 }
