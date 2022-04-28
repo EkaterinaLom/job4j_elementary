@@ -15,7 +15,7 @@ public class PointTest {
     }
 
     @Test
-    public void when24to00to46then4() {
+    public void when204to406then4() {
         Point a = new Point(2, 0, 4);
         Point b = new Point(4, 0, 6);
         double dist = a.distance3d(b);
